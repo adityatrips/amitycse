@@ -1,113 +1,209 @@
-import Image from "next/image";
+import React from 'react';
+import Navbar from './componsents/shared/Navbar';
+import Image from 'next/image';
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+export default function HomePage() {
+	return (
+		<div className='z-0'>
+			<Image
+				alt='Amity Campus'
+				className='h-[auto] max-h-[75vh] object-cover w-[100%]'
+				src={require('@/images/Amity-campus.jpg')}
+			/>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+			<h1 className='title-bg text-center uppercase text-white font-extrabold text-2xl py-2'>
+				Computer Science & Engineering Department
+			</h1>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+			<div className='py-10 px-5'>
+				<h1 className='title'>About Us</h1>
+				<p>
+					Department of Computer Science & Engineering was formed in 2003 at
+					Amity University, Noida. Since its inception, the department has been
+					recognized all over the world for excellence in research and teaching.
+					It also provides a supportive, friendly and challenging environment
+					for teaching, learning and research.
+				</p>
+				<p>
+					Today, the Department has a vibrant student body numbering about more
+					than 2500 students and many eminent professors with PhD/PhD pursuing.
+					The Department also offers several attractive international exposures
+					in terms of student exchange program, Industrial Internship, Minor
+					Project and Major Project for UG and PG Programs.
+				</p>
+				<p>
+					Department is nurtured by its clubs/committee and research groups.
+					These clubs offer students the chance to gain experience in their
+					interest areas and network with their peers. Each research group holds
+					regular meetings and hold seminars to discuss current research topics
+					and results
+				</p>
+			</div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+			<div className='px-5 py-10'>
+				<h1 className='title'>HOI&apos;S Message</h1>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+				<blockquote class='m-10 md:m-20'>
+					<div class='z-10'>
+						<p class='text-gray-800 font-medium'>
+							<em>
+								Amity School of Engineering and Technology aim to develop
+								globally adaptable professionals with social sensitivity. The
+								institute is all set to bring out the potential within each
+								student and provide proper guidance so that their potentials can
+								be utilized to make them future engineers capable of meeting any
+								challenge that will be faced by them after leaving the
+								university. The university provides full support to improve
+								their communication skills, critical thinking abilities, moral
+								values and sense of responsibility. All efforts are made to
+								improve the creativity and problem solving abilities of the
+								students so that they can contribute their best to the society
+								and the country. Today we are all witnessing the impact of
+								globalization and liberalization. It is true that the
+								technological transformation has impacted all our lives. In this
+								era of globalization and liberalization there are lot many
+								challenges. As an academic institute it is necessary to address
+								these challenges. At institute level we are constantly taking
+								efforts to ensure that our students will showcase their academic
+								talent with high moral values. Our students being Engineers will
+								contribute and for sure will keep Social Commitment.
+								Faculty-members guide and monitor students by participating in
+								their academic, research, sports &amp; cultural pursuits. We
+								want our students to be committed, dedicated to their goals
+								along with integrity and concern for the environment and rural
+								society they live in. We rely on a pedagogy that promotes
+								creativity and innovation and teaching-learning practices of
+								high standards. Creativity flourishes in an atmosphere that is
+								free, friendly and above all, democratic and participatory in
+								nature. Every course is designed, delivered and monitored in a
+								manner that will add a significant value to a student. We
+								equally emphasize on the development of core human values,
+								mental well-being and physical well-being of our students.
+							</em>
+						</p>
+					</div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+					<footer class='mt-12'>
+						<div class='flex items-center'>
+							<div class='flex-shrink-0'>
+								<Image
+									class='size-20 rounded-full'
+									src={require('@/images/mkpandey.jpeg')}
+									alt='Image Description'
+								/>
+							</div>
+							<div class='ms-4'>
+								<div class='text-xl font-semibold text-black '>
+									Prof. (Dr.) Manoj Kumar Pandey
+								</div>
+								<div class='text-md text-gray-500'>Head of Institution</div>
+							</div>
+						</div>
+					</footer>
+				</blockquote>
+			</div>
+
+			<div className='px-5 py-10'>
+				<h1 className='title'>Placement Partners</h1>
+				<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6'>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/accenture.jpg')}
+							alt='accenture'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/british-gas.jpg')}
+							alt='british-gas'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/capegemini.jpg')}
+							alt='capegemini'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/csc.jpg')}
+							alt='csc'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/dell.jpg')}
+							alt='dell'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/flipkart.jpg')}
+							alt='flipkart'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/ibm.jpg')}
+							alt='ibm'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/icicic.jpg')}
+							alt='icicic'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/igate.jpg')}
+							alt='igate'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/indian-navy.jpg')}
+							alt='indian-navy'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/indianoil.jpg')}
+							alt='indianoil'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/microsoft.jpg')}
+							alt='microsoft'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/tata.jpg')}
+							alt='tata'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/unilibwe.jpg')}
+							alt='unilibwe'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/videocon.jpg')}
+							alt='videocon'
+						/>
+					</div>
+					<div class='flex justify-center items-center'>
+						<Image
+							src={require('@/images/wipro.jpg')}
+							alt='wipro'
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }

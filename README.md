@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Amity University Computer Science and Engineering Department
 
-## Getting Started
+Welcome to the official website of the Computer Science and Engineering (CSE) department at Amity University! This website serves as a central hub for students, faculty, and visitors to access information about our department, programs, courses, research, and more.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About](#about)
+- [Programs](#programs)
+- [Courses](#courses)
+- [Research](#research)
+- [Faculty](#faculty)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+In this section, provide a brief overview of the CSE department at Amity University. Highlight the department's mission, vision, and core values. Mention any unique features or achievements of the department.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Programs
 
-## Learn More
+List the undergraduate and postgraduate programs offered by the CSE department. Include a brief description of each program and any specializations or tracks available.
 
-To learn more about Next.js, take a look at the following resources:
+## Courses
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Provide an overview of the courses offered by the CSE department. Include information about core courses, elective courses, and any specialized tracks or concentrations. You can also mention any unique or innovative courses offered by the department.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Research
 
-## Deploy on Vercel
+Highlight the research areas and ongoing projects in the CSE department. Mention any collaborations with industry or other research institutions. Provide information about research facilities, labs, and equipment available to students and faculty.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Faculty
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Introduce the faculty members of the CSE department. Include their names, qualifications, areas of expertise, and any notable achievements or awards. You can also provide links to their personal profiles or research publications.
+
+## Contact
+
+Provide contact information for the CSE department. Include the department's address, phone number, email address, and any social media handles or website links.
+
+## Contributers
+
+- [Aditya Tripathi](https://github.com/adityatrips)
+- [cyanxcode](https://github.com/cyanxcode)
+- [Chinmay Singhal](https://github.com/Chinmay-Singhal)
+- [Nandani Giri](https://github.com/EzeeBee22)
+- [vinsmoke0003](https://github.com/vinsmoke0003)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
